@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "id":"1",
+            "firstName":"othman",
+            "lastName":"kharbouch",
+            "email":"otmankharbouch813@gmail.com",
+            "password":"..........",
+            "time-created":"22/02/2005"
+        }
+    ]
+}
