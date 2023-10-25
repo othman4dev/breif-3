@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wishe store page">
+    <meta name="keywords" content="E-commerce, Products, Clothes, Buy, Whishe, Amazon, Prices">
+    <meta name="author" content="Othman Kharbouch">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <header class="index">
+        <div class="left" style="display: flex;align-items: center;justify-content: stretch;gap: 15px;flex-grow: 1;">
+            <img src="Assets/icons8-amazon-96.svg" class="logo" alt="" style="cursor: pointer;" onclick="goTo('index')">
+            <form action="#" style="display: flex;flex-grow: 1;align-items: center;">
+                <input type="text" class="search" placeholder="Chercher un produit une marque ou categotie..." onkeyup="searchIt(this)" id="search" autocomplete="off" spellcheck="false">
+                <img src="Assets/search.svg" style="width: 30px;height: 30px;margin-left: 25px;display: none;cursor: pointer;" alt="" id="search-icon" onclick="results()">
+            </form>
+        </div>
+        <div class="right" style="display: flex;align-items: center;justify-content: right;margin-right: 15px;flex-wrap: nowrap;width: fit-content;">
+            <div class="log" style="display: flex; gap: 5px;">
+                <button class="login" onclick="goTo('signin')">sign in</button>
+            </div>
+            <div class="country" style="display: flex;">
+                <img src="Assets/img.icons8.svg" class="morocco" alt="">
+                <p class="cCode">MAR</p>
+            </div>
+            <div onmouseover="sideCart(this)" class="cartbox" style="display: flex;cursor: pointer;position: relative;">
+                <img onclick="goTo('cart')" src="Assets/icons8-cart-90 (1).svg" class="cart" alt="">
+                <p onclick="goTo('cart')" class="cart-items" id="length">0</p>
+                <div class="cart-bar" id="cart-bar" onmouseleave="sideCartClose(this)">
+                    <!--Items for cart side menu-->
+                    <span id="inserter" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-field">
+        <fieldset class="field">
+            <h2>Sign up</h2>
+            <form method="dialog">
+                <div class="names">
+                    <label for="fName"><p id="f-name-e" class="p-input">First name</p><input type="text" id="fName" class="input-sign" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" required></label> 
+                    <label for="lName"><p id="l-name-e" class="p-input">Last name</p><input type="text" id="lName" class="input-sign" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" required></label>
+                </div>
+                <label for="email"><p id="mail-e" class="p-input">Email</p><input type="email" id="email" class="input-sign" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" required></label>
+                <label for="pass"><p id="pass-e" class="p-input">New password</p><input type="text" class="input-sign" id="pass1" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" required></label>
+                <label for="pass"><p id="r-pass-e" class="p-input">Confirm password</p><input type="text" class="input-sign" id="pass2" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" required></label>
+                <input type="submit" id="log-in" value="sign up" onclick="checkPassword()">
+            </form>
+            <a href="forget.html" id="forgot">Password forgotten ?</a>
+            <p class="no-acc">You have an account ? <a href="signin.html">Sign in</a></p>
+        </fieldset>
+    </main>
+    <footer>
+        <div style="transform: translateY(30px);">
+            <a href="secondary/about.html">About</a>
+            <a href="secondary/support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <p>Copyright 2023 &copy;. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>

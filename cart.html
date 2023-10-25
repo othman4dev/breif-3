@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wishe store page">
+    <meta name="keywords" content="E-commerce, Products, Clothes, Buy, Whishe, Amazon, Prices">
+    <meta name="author" content="Othman Kharbouch">
+    <link rel="stylesheet" href="style.css">
+    <title>Your cart</title>
+</head>
+<body>
+    <header class="newHeader">
+        <div class="left" style="display: flex;align-items: center;justify-content: stretch;gap: 15px;flex-grow: 1;">
+            <img src="Assets/icons8-amazon-96.svg" class="logo" alt="" style="cursor: pointer;" onclick="goTo('index')">
+            <form action="#" style="display: flex;flex-grow: 1;align-items: center;">
+                <input type="text" class="search" placeholder="Chercher un produit une marque ou categotie..." onkeyup="searchIt(this)" id="search">
+                <img src="Assets/search.svg" style="width: 30px;height: 30px;margin-left: 25px;display: none;cursor: pointer;" alt="" id="search-icon" onclick="results()">
+            </form>
+        </div>
+        <div class="right" style="display: flex;align-items: center;justify-content: right;margin-right: 15px;flex-wrap: nowrap;width: fit-content;margin-left: 15px;">
+            <div class="log" style="display: flex; gap: 5px;">
+                <button class="login" onclick="goTo('signin')" style="border-right:solid 2px #E2E8F0;">Sign in</button>
+                <button class="login" onclick="goTo('create')">Create account</button>
+            </div>
+            <div class="country" style="display: flex;">
+                <img src="Assets/img.icons8.svg" class="morocco" alt="">
+                <p class="cCode">MAR</p>
+            </div>
+            <div onmouseover="sideCart(this)" class="cartbox" style="display: flex;cursor: pointer;position: relative;">
+                <img onclick="goTo('cart')" src="Assets/icons8-cart-90 (1).svg" class="cart" alt="">
+                <p onclick="goTo('cart')" class="cart-items" id="length">0</p>
+                <div class="cart-bar" id="cart-bar" onmouseleave="sideCartClose(this)">
+                    <!--Items for cart side menu-->
+                    <span id="inserter" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" style="display: flex;gap: 25px;">
+        <section class="products-selected" id="products-selected">
+            <div style="border: solid 1px #E2E8F0;height: 40px;display: flex;align-items: center;width: 100%;position: relative;">
+                <div style="height: 100%;display: flex;align-items: center;min-width: 70px;">&nbsp;<input type="checkbox" id="checking" onchange="selectAll(this)" style="margin-right: 12px;"><label for="checking" style="border-left: solid 1px #E2E8F0;text-align: center;height: 100%;display: flex;align-items: center;justify-content: center;padding-left: 10px;" id="select-or-no">&nbsp;&nbsp;Select all products</label><li class="clear" onclick="clearCart()" style="position: absolute;right: 10px;color: red;cursor: pointer;">Clear cart</li></div>
+            </div>
+            <div class="product-wrapper" id="product-wrapper"> 
+                <div id="invisible" style="display: none;"></div>
+            </div>
+        </section>
+        <section class="checkout">
+            <h3>Summery</h3>
+            <div class="elements">
+                <div class="lines"><p>Product price</p><p id="price-too">0</p></div>
+            </div>
+            <div class="elements">
+                <div class="lines" style="color:grey ;font-size: 14px;"><p>Shipping fee</p><p id="fee-fee">0</p></div>
+            </div>
+            <div class="elements">
+                <div class="lines"><p style="font-size: 20px;margin-top: 15px;">Total</p><p style="font-size: 20px;" id="total-money">0</p></div>
+            </div>
+            <button class="Buy">Checkout</button>
+            <div class="elements">
+                <div class="lines" style="flex-wrap: wrap;"><p>Payment methods</p><p style="width: 100%;color:grey ;font-size: 15px;margin-top: -10px;margin-left: 20px;">paypal</p></div>
+            </div>
+        </section>
+        <dialog open id="dialog-clear">
+            <img src="Assets/ex.svg" alt="" class="close" onclick="document.getElementById('dialog-clear').style.display = ('none');">
+            <div class="h3-p-wrapper">
+                <h3>Clear all items in cart ?</h3>
+                <p>All items in cart will be lost</p>
+            </div>
+            <div class="button-wrapper">
+                <button style="background-color: red;color: white;" id="clear-btn" onclick="deleteIt()">Clear</button>
+                <button onclick="document.getElementById('dialog-clear').style.display = ('none');" style="background-color: rgb(255, 255, 255);color: black;border: solid grey 1px;">Cancel</button>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div style="transform: translateY(30px);">
+            <a href="secondary/about.html">About</a>
+            <a href="secondary/support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <p>Copyright 2023 &copy;. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
+<script src="storage.js"></script>

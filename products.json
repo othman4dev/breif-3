@@ -1,0 +1,503 @@
+{
+    "Products": [
+        {
+            "identifier":"0",
+            "id":"products1",
+            "name":"Sunburst Thunder :",
+            "price":"12000",
+            "discription":"Sunburst Thunder: The Ultimate Yellow Motorcycle VH600, 120mph max speed.",
+            "rate":"4.9",
+            "sold":"420",
+            "count":"0",
+            "url":"Assets/1.webp"},
+
+        {
+            "identifier":"1",
+            "id":"products2",
+            "name":"EliteVision :",
+            "price":"1200",
+            "discription":"EliteVision : Unleash Precision - Gaming Monitor Excellence, 1280x820 4k best Quality.",
+            "rate":"4.8",
+            "sold":"870",
+            "count":"0",
+            "url":"Assets/2.webp"
+        },
+        {
+            "identifier":"2",
+            "id":"products3",
+            "name":"SoundSync Wired Earbuds:",
+            "price":"20",
+            "discription":"SoundSync Wired Earbuds: Unleash Your Audio World, 160 dbi max volume best Quality.",
+            "rate":"4.9",
+            "sold":"1020",
+            "count":"0",
+            "url":"Assets/3.webp"
+        },
+        {
+            "identifier":"3",
+            "id":"products4",
+            "name":"Harmony Grand :",
+            "price":"599",
+            "discription":"Harmony Grand : Where Music Comes to Life. 52 keyboard XXL Piano Suzuki.",
+            "rate":"4.8",
+            "sold":"302",
+            "count":"0",
+            "url":"Assets/4.webp"
+        },
+        {
+            "identifier":"4",
+            "id":"products5",
+            "name":"SkyCapture Pro :",
+            "price":"200",
+            "discription":"SkyCapture Pro : Elevate Your View with Camera Drone Mastery.",
+            "rate":"4.5",
+            "sold":"121",
+            "count":"0",
+            "url":"Assets/5.webp"
+        },
+        {
+            "identifier":"5",
+            "id":"products6",
+            "name":"Mercedes Legacy Series:",
+            "price":"24000",
+            "discription":"Mercedes Legacy Series: Where Luxury Meets Performance.",
+            "rate":"5.0",
+            "sold":"180",
+            "count":"0",
+            "url":"Assets/6.webp"
+        },
+        {
+            "identifier":"6",
+            "id":"products7",
+            "name":"TripleComfort Hoodie Pack :",
+            "price":"150",
+            "discription":"TripleComfort Hoodie Pack : Cozy Style for Every Season.",
+            "rate":"5.0",
+            "sold":"21",
+            "count":"0",
+            "url":"Assets/7.webp"},
+        {
+            "identifier":"7",
+            "id":"products8",
+            "name":"ClarityView Vision Glasses :",
+            "price":"120",
+            "discription":"ClarityView Vision Glasses : See the World with Precision.",
+            "rate":"5.0",
+            "sold":"55",
+            "count":"0",
+            "url":"Assets/8.webp"},
+        {
+            "identifier":"8",
+            "id":"products9",
+            "name":"LensMaster Pro :",
+            "price":"899",
+            "discription":"LensMaster Pro : Capturing Life's Moments with Precision.",
+            "rate":"4.8",
+            "sold":"354",
+            "count":"0",
+            "url":"Assets/9.webp"},
+        {
+            "identifier":"9",
+            "id":"products10",
+            "name":"HyperAudio Gaming Headset :",
+            "price":"99",
+            "discription":"HyperAudio Gaming Headset : Immersive Sound, Unrivaled Victory",
+            "rate":"5.0",
+            "sold":"1205",
+            "count":"0",
+            "url":"Assets/10.webp"
+        },
+        {
+            "id": 1,
+            "name": "Smartphone XZ-2000",
+            "price": 599.99,
+            "description": "The latest flagship smartphone with advanced features. 6.5-inch display, 128GB storage, and dual cameras.",
+            "rating": 4.7,
+            "sold": 85,
+            "url": "",
+            "count": 0
+        },
+        {
+            "id": 2,
+            "name": "Wireless Headphones Pro",
+            "price": 149.99,
+            "description": "High-quality wireless headphones with noise-cancellation. Over-ear design for immersive sound.",
+            "rating": 4.5,
+            "sold": 120,
+            "url": "",
+            "count": 0
+        },
+        {
+          "id": 3,
+          "name": "Ultra HD Smart TV",
+          "price": 799.99,
+          "description": "Experience stunning 4K visuals with this 55-inch smart TV. Built-in streaming apps for entertainment.",
+          "rating": 4.8,
+          "sold": 60,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 4,
+          "name": "Laptop ProBook 15",
+          "price": 899.99,
+          "description": "Powerful 15-inch laptop with Intel Core i7, 16GB RAM, and fast SSD storage. Ideal for work and gaming.",
+          "rating": 4.6,
+          "sold": 75,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 5,
+          "name": "Digital Camera DSLR-500",
+          "price": 699.99,
+          "description": "Capture stunning photos with this 24MP DSLR camera. Interchangeable lenses for creative photography.",
+          "rating": 4.4,
+          "sold": 50,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 6,
+          "name": "Tablet Pro 10",
+          "price": 299.99,
+          "description": "10-inch tablet with a high-res display, fast processor, and long battery life. Great for multimedia and browsing.",
+          "rating": 4.3,
+          "sold": 110,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 7,
+          "name": "Gaming Console Elite-X",
+          "price": 399.99,
+          "description": "Next-gen gaming console for immersive gaming experiences. 4K graphics and a vast game library.",
+          "rating": 4.9,
+          "sold": 40,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 8,
+          "name": "Smartwatch Z-500",
+          "price": 199.99,
+          "description": "Stay connected and track your fitness with this feature-packed smartwatch. Stylish and durable design.",
+          "rating": 4.5,
+          "sold": 65,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 9,
+          "name": "Drone Phantom X1",
+          "price": 499.99,
+          "description": "Capture breathtaking aerial photos and videos with this advanced drone. GPS and 4K camera included.",
+          "rating": 4.7,
+          "sold": 30,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 10,
+          "name": "Portable Bluetooth Speaker",
+          "price": 79.99,
+          "description": "Take your music with you wherever you go with this portable Bluetooth speaker. Crystal clear sound.",
+          "rating": 4.2,
+          "sold": 90,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 11,
+          "name": "High-Performance Desktop PC",
+          "price": 1299.99,
+          "description": "Desktop computer with top-of-the-line components. Ideal for gaming, video editing, and more.",
+          "rating": 4.8,
+          "sold": 55,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 12,
+          "name": "Smart Home Security Camera",
+          "price": 149.99,
+          "description": "Keep an eye on your home with this smart security camera. HD video, night vision, and motion detection.",
+          "rating": 4.4,
+          "sold": 70,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 13,
+          "name": "Noise-Canceling Earbuds",
+          "price": 129.99,
+          "description": "Enjoy your music in peace with these wireless noise-canceling earbuds. Long battery life and comfort fit.",
+          "rating": 4.6,
+          "sold": 100,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 14,
+          "name": "Compact Refrigerator",
+          "price": 199.99,
+          "description": "Keep your drinks and snacks cool with this compact refrigerator. Perfect for small spaces.",
+          "rating": 4.1,
+          "sold": 45,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 15,
+          "name": "Leather Recliner Chair",
+          "price": 399.99,
+          "description": "Sink into comfort with this luxurious leather recliner chair. Ideal for relaxing after a long day.",
+          "rating": 4.5,
+          "sold": 35,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 16,
+          "name": "Queen Size Bed Frame",
+          "price": 299.99,
+          "description": "Sturdy and stylish bed frame for a comfortable night's sleep. Fits queen-size mattresses.",
+          "rating": 4.3,
+          "sold": 60,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 17,
+          "name": "Hair Dryer and Styler",
+          "price": 59.99,
+          "description": "Achieve salon-quality hair at home with this hair dryer and styler. Multiple heat settings.",
+          "rating": 4.2,
+          "sold": 80,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 18,
+          "name": "Fitness Tracker Band",
+          "price": 49.99,
+          "description": "Stay on top of your fitness goals with this smart fitness tracker band. Tracks steps, heart rate, and more.",
+          "rating": 4.4,
+          "sold": 120,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 19,
+          "name": "Cordless Vacuum Cleaner",
+          "price": 169.99,
+          "description": "Efficiently clean your home with this cordless vacuum cleaner. Lightweight and powerful suction.",
+          "rating": 4.6,
+          "sold": 70,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 20,
+          "name": "Tablet Stand and Holder",
+          "price": 19.99,
+          "description": "Convenient stand and holder for your tablet. Adjustable angles for comfortable viewing.",
+          "rating": 4.1,
+          "sold": 90,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 21,
+          "name": "Men's Denim Jacket",
+          "price": 79.99,
+          "description": "Classic denim jacket for men. Stylish and comfortable.",
+          "rating": 4.2,
+          "sold": 65,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 22,
+          "name": "Women's Floral Dress",
+          "price": 49.99,
+          "description": "Elegant floral dress for women. Perfect for summer.",
+          "rating": 4.4,
+          "sold": 92,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 23,
+          "name": "Sofa Set with Coffee Table",
+          "price": 499.99,
+          "description": "Comfortable sofa set with a matching coffee table. Perfect for your living room.",
+          "rating": 4.3,
+          "sold": 55,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 24,
+          "name": "Queen Size Bed with Storage",
+          "price": 349.99,
+          "description": "Elegant queen-size bed with built-in storage. Space-saving and stylish.",
+          "rating": 4.5,
+          "sold": 45,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 25,
+          "name": "Dining Table and Chairs",
+          "price": 299.99,
+          "description": "Modern dining table set with four chairs. Ideal for family gatherings and meals.",
+          "rating": 4.4,
+          "sold": 60,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 26,
+          "name": "Home Office Desk",
+          "price": 149.99,
+          "description": "Sturdy desk for your home office. Features storage drawers and ample workspace.",
+          "rating": 4.2,
+          "sold": 75,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 27,
+          "name": "Wardrobe Closet",
+          "price": 249.99,
+          "description": "Spacious wardrobe closet for your clothing storage needs. Includes shelves and a hanging rod.",
+          "rating": 4.3,
+          "sold": 40,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 28,
+          "name": "Coffee Table Set",
+          "price": 79.99,
+          "description": "Matching coffee tables in various sizes. Adds elegance to your living room decor.",
+          "rating": 4.0,
+          "sold": 90,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 29,
+          "name": "Reclining Armchair",
+          "price": 199.99,
+          "description": "Plush reclining armchair for ultimate relaxation. Multiple recline positions and comfortable padding.",
+          "rating": 4.6,
+          "sold": 35,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 30,
+          "name": "Area Rug",
+          "price": 69.99,
+          "description": "Decorative area rug for your living space. Available in various sizes and patterns.",
+          "rating": 4.4,
+          "sold": 55,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 31,
+          "name": "Bookshelf and Storage Unit",
+          "price": 129.99,
+          "description": "Versatile bookshelf with additional storage compartments. Organize your books and decor.",
+          "rating": 4.1,
+          "sold": 50,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 32,
+          "name": "Wall-Mounted Mirror",
+          "price": 39.99,
+          "description": "Elegant wall-mounted mirror for your bedroom or hallway. Adds a touch of style to your space.",
+          "rating": 4.2,
+          "sold": 70,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 33,
+          "name": "Kitchen Dining Set",
+          "price": 299.99,
+          "description": "Compact dining set for your kitchen or dining area. Table and chairs included.",
+          "rating": 4.0,
+          "sold": 40,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 34,
+          "name": "Storage Ottoman",
+          "price": 49.99,
+          "description": "Multifunctional storage ottoman with a hidden compartment. A stylish addition to your living room.",
+          "rating": 4.3,
+          "sold": 60,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 35,
+          "name": "Bar Stools (Set of 2)",
+          "price": 79.99,
+          "description": "Set of two modern bar stools for your kitchen island or bar area. Adjustable height and comfortable seating.",
+          "rating": 4.5,
+          "sold": 30,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 36,
+          "name": "Patio Furniture Set",
+          "price": 399.99,
+          "description": "Outdoor patio furniture set with seating and coffee table. Ideal for relaxing in your backyard.",
+          "rating": 4.4,
+          "sold": 20,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 37,
+          "name": "Bathroom Vanity with Sink",
+          "price": 299.99,
+          "description": "Stylish bathroom vanity with a sink. Features ample storage space and a durable countertop.",
+          "rating": 4.2,
+          "sold": 25,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 38,
+          "name": "Curtain Panels (Set of 2)",
+          "price": 29.99,
+          "description": "Set of two curtain panels for your windows. Available in various colors and designs.",
+          "rating": 4.1,
+          "sold": 85,
+          "url": "",
+          "count": 0
+        },
+        {
+          "id": 39,
+          "name": "Nightstand with Drawers",
+          "price": 59.99,
+          "description": "Compact nightstand with storage drawers. Keep your essentials within reach at bedtime.",
+          "rating": 4.3,
+          "sold": 75,
+          "url": "",
+          "count": 0
+        }
+    ]
+}
+  
+  

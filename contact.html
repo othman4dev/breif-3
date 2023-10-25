@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wishe store page">
+    <meta name="keywords" content="E-commerce, Products, Clothes, Buy, Whishe, Amazon, Prices">
+    <meta name="author" content="Othman Kharbouch">
+    <script>
+        var array = localStorage.getItem('array').length;
+        let message = localStorage.getItem('message');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact page</title>
+</head>
+<body>
+    <header class="index">
+        <div class="left" style="display: flex;align-items: center;justify-content: stretch;gap: 15px;flex-grow: 1;">
+            <img src="Assets/icons8-amazon-96.svg" class="logo" alt="" style="cursor: pointer;" onclick="goTo('index')">
+            <form action="#" style="display: flex;flex-grow: 1;align-items: center;">
+                <input type="text" class="search" placeholder="Chercher un produit une marque ou categotie..." onkeyup="searchIt(this)" id="search" autocomplete="off" spellcheck="false">
+                <img src="Assets/search.svg" style="width: 30px;height: 30px;margin-left: 25px;display: none;cursor: pointer;" alt="" id="search-icon" onclick="results()">
+            </form>
+        </div>
+        <div class="right" style="display: flex;align-items: center;justify-content: right;margin-right: 15px;flex-wrap: nowrap;width: fit-content;">
+            <div class="log" style="display: flex; gap: 5px;">
+                <button class="login" style="border-right:solid 2px #E2E8F0;">Sign in</button>
+                <button class="login">Create account</button>
+            </div>
+            <div class="country" style="display: flex;">
+                <img src="Assets/img.icons8.svg" class="morocco" alt="">
+                <p class="cCode">MAR</p>
+            </div>
+            <div onmouseover="sideCart(this)" class="cartbox" style="display: flex;cursor: pointer;position: relative;">
+                <img onclick="goTo('cart')" src="Assets/icons8-cart-90 (1).svg" class="cart" alt="">
+                <p onclick="goTo('cart')" class="cart-items" id="length">0</p>
+                <div class="cart-bar" id="cart-bar" onmouseleave="sideCartClose(this)">
+                    <!--Items for cart side menu-->
+                    <span id="inserter" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-contact" id="main">
+        <h1>Contact us ! we love hearing from you.</h1>
+        <form class="forum" id="forum">
+            <div class="wrapper-label"><label for="name" class="label-shift"><p>Full name</p><input type="text" name="name" id="name" class="small-input" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off"></label></div>
+            <div class="wrapper-label"><label for="email" class="label-shift"><p>Email</p><input type="text" name="email" id="email" class="small-input" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off" ></label></div>
+            <div class="wrapper-label" style="display: flex;"><p class="shift-p">Your message</p><textarea name="" id="message" rows="10" class="textarea" onfocus="shift(this)" onblur="noShift(this)" onkeyup="keepShift(this)" spellcheck="false" autocomplete="off"></textarea></div>
+            <input type="submit" onclick="sendMessage(this)">
+        </form>
+    </main>
+    <footer>
+        <div style="transform: translateY(30px);">
+            <a href="secondary/about.html">About</a>
+            <a href="secondary/support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <p>Copyright 2023 &copy;. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
+<script>
+    if (message) {
+        let object = JSON.parse(message);
+        document.getElementById('main').innerHTML = `
+        <form class="forum" id="forum">
+            <div class="last-wrapper">
+                <h1>Thanks you, We got your message.</h1>
+                <img src="Assets/check.svg" alt="">
+            </div>
+            <div id="message-1">
+                <button>sent</button>
+                <p>${object.fullname} :</p>
+                <p class="scroll-if-long">${object.message}</p>
+                <small>${object.date}</small>
+                <img src="Assets/edit.png" style="width: 30px;height: 30px;opacity: 0.5;cursor: pointer;" alt="" onclick="goBack()">
+                <img src="Assets/trash.svg" style="width:25px;height:25px;" onclick="clearMessage();" alt="">
+            </div>
+        </form>`
+    }
+</script>
