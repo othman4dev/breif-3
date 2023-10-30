@@ -6,9 +6,6 @@
     <meta name="description" content="Wishe store page">
     <meta name="keywords" content="E-commerce, Products, Clothes, Buy, Whishe, Amazon, Prices">
     <meta name="author" content="Othman Kharbouch">
-    <script>
-        var array = localStorage.getItem('array').length;
-    </script>
     <link rel="stylesheet" href="style.css">
     <title>Welcome to Wishe</title>
 </head>
@@ -370,7 +367,6 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
 <script>
     window.onload = function () {
 if (localStorage.getItem("hasCodeRunBefore") === null) {
@@ -378,16 +374,17 @@ if (localStorage.getItem("hasCodeRunBefore") === null) {
     localStorage.setItem('array',JSON.stringify(arrayOfItems));
     localStorage.setItem("hasCodeRunBefore", true);
     }
-}
-window.onload = function () {
     if (localStorage.getItem('user') !== null) {
-                    let user = JSON.parse(localStorage.getItem('array'));
+                    let user = JSON.parse(localStorage.getItem('user'));
+                    console.log(localStorage.getItem('user'));
                     document.getElementById('log').innerHTML = `
-                    <div style="display: flex;flex-direction: column;align-items: center;">
-                        <img src="Assets/default.png" style="height: 40px;width: 40px;background-color: grey; border-radius: 50%;" alt="">
-                        <p>${user.firstName}${user.lastName}</p>
+                    <div style="display: flex;align-items: center;gap:15px;flex-direction:row-reverse;justify-content:space-evenly;padding-inline:7px;border-radius:9pt;">
+                        <img src="Assets/default.png" style="height: 30px; border:solid grey 2px;width: 30px;background-color: grey; border-radius: 50%;" alt="">
+                        <p>${user.firstName} ${user.lastName}</p>
                     </div>
                     `
+                    console.log(user);
+                    console.log(user.name);
                 }
 }
 const swiper = new Swiper('.swiper-container', {
@@ -415,4 +412,8 @@ const swiper = new Swiper('.swiper-container', {
     document.getElementById('next-btn').click();
   }
   ,2000);
+</script>
+<script src="script.js" defer></script>
+<script>
+    var array = localStorage.getItem('array').length;
 </script>

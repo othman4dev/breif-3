@@ -23,8 +23,8 @@ function verifyCart() {
     }
     if (array.length == 0) {
         document.getElementById('inserter').insertAdjacentHTML('beforebegin',`
-        <div class="item-cart" style="justify-content:center">
-            <img src="Assets/not.png" style="max-width: 70px;width: 70px;height: 60px;">
+        <div class="item-cart" style="justify-content:center;align-items:center;margin-top:10px;margin-bottom:10px">
+            <img src="Assets/not.png" style="max-width: 50px;width: 40px;height: 40px;">
             <div class="item-cart-text" style="display:flex;align-items:center;justify-content:flex-start;color:rgb(200,200,200)"><h4>Cart is Empty</h4></div>
         </div>
         `);
